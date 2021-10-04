@@ -17,7 +17,7 @@ async function startApp() {
     try {
         await mongoose.connect(DB_URL, { useUnifiedTopology: true, useNewUrlParser: true })
         app.listen(PORT, () => {
-            console.log('SERVER STARTED ON PORT 5000')
+            console.log(`SERVER STARTED ON PORT ${PORT}`)
         })
     } catch (error) {
         console.log(error)
